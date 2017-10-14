@@ -3,14 +3,15 @@
 from setuptools import setup
 
 setup(
-    name="warc",
-    version="0.2.1",
+    name="warc3-wet",
+    version="0.2.2-wet",
     description="Python library to work with ARC and WARC files",
     long_description=open('Readme.rst').read(),
     license='GPLv2',
     author="Internet Archive",
     author_email="info@archive.org",
-    url="http://github.com/internetarchive/warc",
+    url="https://github.com/Willian-Zhang/warc3",
+    download_url = 'https://github.com/Willian-Zhang/warc3/archive/0.2.2-wet.tar.gz', 
     packages=["warc"],
     platforms=["any"],
     package_data={'': ["LICENSE", "Readme.rst"]},

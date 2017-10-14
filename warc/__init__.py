@@ -16,6 +16,8 @@ def detect_format(filename):
 
     if filename.endswith(".warc") or filename.endswith(".warc.gz"):
         return "warc"
+    elif filename.endswith(".warc.wet") or filename.endswith(".warc.wet.gz"):
+        return "wet"
 
     return "unknown"
 
@@ -28,7 +30,7 @@ def open(filename, mode="rb", format = None):
     if format == "auto" or format == None:
         format = detect_format(filename)
 
-    if format == "warc":
+    if format == "warc" or format == "wet":
         return WARCFile(filename, mode)
     elif format == "arc":
         return ARCFile(filename, mode)

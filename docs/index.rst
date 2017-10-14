@@ -41,7 +41,7 @@ Reading a warc file is as simple as reading a simple file. Instead of returning 
     import warc
     f = warc.open("test.warc.gz")
     for record in f:
-        print record['WARC-Target-URI'], record['Content-Length']
+        print( record['WARC-Target-URI'], record['Content-Length'])
 
 The ``open`` function is a shorthand for :class:`warc.WARCFile`.::
 

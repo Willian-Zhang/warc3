@@ -1,4 +1,4 @@
-warc3: Python3 library to work with WARC files
+warc3-wet: Python3 library to work with WARC and WET files
 ==============================================
 
 Note: This is a fork of the original (now dead) warc repository.
@@ -12,7 +12,15 @@ This `warc` library makes it very easy to work with WARC files.::
     import warc
     with warc.open("test.warc") as f:
         for record in f:
-            print record['WARC-Target-URI'], record['Content-Length']
+            print(record['WARC-Target-URI'], record['Content-Length'])
+
+And WET files:
+
+    import warc
+    with warc.open("test.warc.wet") as f:
+        for record in f:
+            print(record['WARC-Target-URI'], record['Content-Length'])
+
 
 Documentation
 -------------
@@ -42,3 +50,4 @@ Python3 Port:
 * Ryan Chartier 
 * Jan Pieter Bruins Slot
 * Almer S. Tigelaar
+* Willian Z
