@@ -14,13 +14,12 @@ This `warc` library makes it very easy to work with WARC files.::
         for record in f:
             print(record['WARC-Target-URI'], record['Content-Length'])
 
-And WET files:
+And WET files.::
 
     import warc
     with warc.open("test.warc.wet") as f:
         for record in f:
             print(record['WARC-Target-URI'], record['Content-Length'])
-
 
 Documentation
 -------------
