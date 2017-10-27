@@ -49,4 +49,17 @@ Python3 Port:
 * Ryan Chartier 
 * Jan Pieter Bruins Slot
 * Almer S. Tigelaar
-* Willian Z
+
+Modification
+* Willian Zhang
+
+Change Log
+-------
+0.2.3
+Support seeking in WARC/WET
+
+0.2.2
+Allow WET parse
+
+older...
+see https://github.com/internetarchive/warc

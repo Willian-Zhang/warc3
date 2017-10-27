@@ -313,7 +313,7 @@ class WARCFile:
         The payload of each record is limited to 1MB to keep memory consumption
         under control.
         """
-        offset = 0
+        offset = self.tell()
         for record in self.reader:
             # Just read the first 1MB of the payload.
             # This will make sure memory consuption is under control and it
@@ -324,6 +324,13 @@ class WARCFile:
             next_offset = self.tell()
             yield record, offset, next_offset-offset
             offset = next_offset
+
+    def seek(self, offset):
+        """
+        Seek to the offset of file.
+        Will change reader, browser etc behavior
+        """
+        self.fileobj.seek(offset)
 
     def tell(self):
         """Returns the file offset.
