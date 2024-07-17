@@ -49,12 +49,18 @@ Python3 Port:
 * Ryan Chartier 
 * Jan Pieter Bruins Slot
 * Almer S. Tigelaar
+* Sean MacAvaney (3.10)
 
-Modification
+WET and seek support
+
 * Willian Zhang
+
 
 Change Log
 -------------
+0.2.4
+Python 3.10 compatibility (thanks to @seanmacavaney)
+
 0.2.3
 Support seeking in WARC/WET
 
