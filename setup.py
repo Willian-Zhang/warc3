@@ -13,6 +13,7 @@ setup(
     url="https://github.com/Willian-Zhang/warc3",
     packages=["warc"],
     platforms=["any"],
+    long_description_content_type="text/x-rst",
     package_data={'': ["LICENSE", "Readme.rst"]},
     include_package_data=True,
     classifiers=[

@@ -1,5 +1,5 @@
 warc3-wet: Python3 library to work with WARC and WET files
-==============================================
+==========================================================
 
 Note: This is a fork of the original (now dead) warc repository.
 
@@ -30,14 +30,14 @@ Apart from the install from pip, which will not work for this warc3 version, the
 interface as described there is unchanged.
 	
 License
--------
+-------------
 
 This software is licensed under GPL v2. See LICENSE_ file for details.
 
 .. LICENSE: http://github.com/internetarchive/warc/blob/master/LICENSE
 
 Authors
--------
+-------------
 
 Original Python2 Versions:
 
@@ -54,7 +54,7 @@ Modification
 * Willian Zhang
 
 Change Log
--------
+-------------
 0.2.3
 Support seeking in WARC/WET
 
